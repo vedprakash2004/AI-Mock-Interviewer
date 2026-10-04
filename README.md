@@ -1,11 +1,10 @@
-# 🤖 Composable AI Mock Interviewer  
+# 🤖 Composable AI Mock Interviewer
 ### Composable, Adaptive & Feedback-Driven Interview Platform
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://composable-ai-mock-interviewer-ldcv.onrender.com)
-[![Frontend](https://img.shields.io/badge/Frontend-React-blue)](https://react.dev)
-[![Backend](https://img.shields.io/badge/Backend-Flask-black)](https://flask.palletsprojects.com)
-[![LLM](https://img.shields.io/badge/LLM-Groq%20(LLaMA3)-purple)](https://groq.com)
-
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://ai-mock-interviewer-jravwx1k7-ved16102004-7147.vercel.app/)
+[![Frontend](https://img.shields.io/badge/Frontend-React-blue)](https://react.dev/)
+[![Backend](https://img.shields.io/badge/Backend-Flask-black)](https://flask.palletsprojects.com/)
+[![LLM](https://img.shields.io/badge/LLM-Groq-purple)](https://groq.com/)
 An **AI-powered mock interview platform** that dynamically adapts questions, evaluates answers, tracks interview memory, and generates a **detailed final interview report**.
 
 Unlike traditional interview tools that rely on static question lists, this system is built using **composable AI blocks** that work together to simulate a **real interviewer**.
@@ -15,7 +14,7 @@ Unlike traditional interview tools that rely on static question lists, this syst
 ## 🚀 Live Demo
 
 🔗 **Frontend + Backend (Deployed)**  
-👉 [https://composable-ai-mock-interviewer-ldcv.onrender.com](https://composable-ai-mock-interviewer-five.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://ai-mock-interviewer-jravwx1k7-ved16102004-7147.vercel.app/)
 
 ---
 
