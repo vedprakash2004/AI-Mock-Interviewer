@@ -258,12 +258,14 @@ const API = "https://composable-ai-mock-interviewer-ldcv.onrender.com/api";
 - Interview performance comparison metrics  
 
 ---
-
 ## 👨‍💻 Author
 
-**Koushik Gupta**  
-*B.Tech (Information Technology)*  
-**AI Systems | Full-Stack Developer**
+### Ved Prakash
+
+**B.Tech Computer Science & Engineering**
+
+Generative AI • Agentic AI • RAG • Python • FastAPI • LangChain • Machine Learning • Streamlit
+
 
 ---
 
