@@ -135,16 +135,59 @@ export default function Report() {
     };
   }, [history]);
 
+  
   const handleDownload = async () => {
-    const res = await downloadReportPdf(report);
-    const blob = new Blob([res.data], { type: "application/pdf" });
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "Interview_Report.pdf";
-    a.click();
-    window.URL.revokeObjectURL(url);
-  };
+     try {
+        const res = await downloadReportPdf(report);
+
+        const blob = res.data;
+
+    // Check whether the backend returned a PDF
+        if (
+           !(blob instanceof Blob) ||
+           blob.size === 0 ||
+           blob.type !== "application/pdf"
+          ) {
+           const details =
+           blob instanceof Blob ? await blob.text() : "";
+
+           throw new Error(
+           details || `Invalid PDF response: ${blob?.type || "unknown"}`
+           );
+          }
+
+       const url = window.URL.createObjectURL(blob);
+       const link = document.createElement("a");
+
+       link.href = url;
+       link.download = "Interview_Report.pdf";
+       document.body.appendChild(link);
+       link.click();
+       link.remove();
+
+       setTimeout(() => {
+       window.URL.revokeObjectURL(url);
+       }, 1000);
+
+       } catch (error) {
+       console.error("PDF download failed:", error);
+
+       if (error.response?.data instanceof Blob) {
+          console.error(
+           "Backend response:",
+           await error.response.data.text()
+         );
+         } else {
+          console.error(
+          "Error details:",
+          error.response?.data || error.message
+         );
+         }
+
+        alert("PDF download failed. Check the browser Console.");
+        }
+       };
+
 
   return (
     <div className="max-w-6xl mx-auto w-full px-4 md:px-8 py-12 space-y-10 pb-20">
