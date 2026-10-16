@@ -25,8 +25,8 @@ const languageFromTopic = (topic = "") => {
   return "plaintext";
 };
 
-const TOTAL_QUESTIONS = 5;
-const QUESTION_TIME_LIMIT_SEC = 3 * 60;
+const TOTAL_QUESTIONS = 10;
+const QUESTION_TIME_LIMIT_SEC = 5 * 60;
 
 function formatTime(seconds) {
   const m = Math.floor(seconds / 60);
