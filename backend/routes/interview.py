@@ -17,7 +17,7 @@ from utils.github_fetcher import (
 interview_bp = Blueprint("interview", __name__)
 
 INTERVIEW_SESSIONS = {}
-MAX_QUESTIONS = 5
+MAX_QUESTIONS = 10
 
 
 # ======================================================
